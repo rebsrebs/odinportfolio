@@ -1,21 +1,36 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 :root {
   background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 body {
   /* width: 320px; */
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white;
   font-family: 'Roboto', sans-serif;
-  margin: 5px;
+  /* position: relative; */
 }
+
+/* .triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+    background-color: blue;
+    clip-path: ellipse(130px 140px at 10% 20%);
+    width: 500px;
+    height: 500px;
+} */
 
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
@@ -23,27 +38,31 @@ h1, h2, h3 {
 
 h1 {
   color: white;
-  font-size: 6vw;
+  font-size: clamp(2.2rem, 5vw + 1rem, 4rem);
 }
 
-/* section headers */
+/* section headings */
 h2 {
   color: black;
   margin-bottom: 15px;
-  font-size: 5vw;
+  font-size: clamp(1.8rem, 4vw + 1rem, 3rem);
 }
 
 h3 {
   color: red;
-  font-size: 4vw;
+  font-size: clamp(1.2rem, 1vw + 1rem, 2rem);
 }
 
+
+/* p {
+  font-size: clamp(1rem, 4vw, 1.5rem);
+} */
 
 
 /* HEADER */
 
 header {
-  position: relative;
+  /* position: relative; */
   margin-top: 15px;
   margin-left: 15px;
   margin-right: 15px;
@@ -53,11 +72,12 @@ header {
 
 img.headshot {
   object-fit: contain;
-  width: 100%;
-  height: 100%;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
   /* width: calc(100vw - 30px); */
   /* offset-x | offset-y | blur-radius | color */
   box-shadow: 3px 3px 5px rgba(0,0,0,.3);
+  margin: 15px;
 }
 
 h1.myname {
@@ -73,6 +93,7 @@ div.aboutmewrapper {
   margin-bottom: 15px;
   margin-left: 15px;
   margin-right: 15px;
+  padding: 15px;
 }
 
 h2.h2aboutme {
@@ -98,20 +119,33 @@ p.aboutmetext {
 
 /* MY WORK */
 
-main.myworkwrapper {
+main.mywork {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  gap: 20px;
   align-items: center;
   margin-bottom: 15px;
   margin-left: 15px;
   margin-right: 15px;
 }
 
+.projectswrapper {
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+  grid-gap: 2rem;
+}
+
 div.projectbox {
   box-shadow: 3px 3px 5px rgba(0,0,0,.3);
   margin-bottom: 30px;
-  background-color: yellow;
+  background-color: rgb(235, 225, 192);
   padding-bottom: 15px;
+  align-self: center;
 }
 
 img.projectscreenshot {
@@ -124,7 +158,8 @@ div.projectnamerow {
   padding: 10px 15px 10px 15px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 30px;
   align-items: center;
 }
 
@@ -133,12 +168,14 @@ img.projecticon {
 }
 
 p.projectdescription {
-  padding-left: 10px;
+  padding-left: 15px;
+  padding-bottom: 30px;
 }
 
 /* FOOTER */
 
 footer {
+  width: 100%;
   padding: 15px;
   color: white;
   display: flex;
@@ -154,7 +191,8 @@ h2.h2footer {
 }
 
 p.footertext {
-  font-size: 3.2vw;
+  /* font-size: 3.2vw; */
+  font-size: clamp(1rem, 1rem + 2vw, 18px);
   margin-bottom: 15px;
 }
 
@@ -183,3 +221,9 @@ p.footertext {
 }
 
 
+/* @media (min-width: 600px) {
+  main.mywork {
+    align-items:flex-start;
+    justify-content: left;
+  }
+} */
