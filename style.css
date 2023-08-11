@@ -172,6 +172,10 @@ p.projectdescription {
   padding-bottom: 30px;
 }
 
+div.projecticonswrapper {
+  white-space:nowrap ;
+}
+
 /* FOOTER */
 
 footer {
