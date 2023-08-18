@@ -24,7 +24,7 @@ body {
 
 .flag {
   position: absolute;
-  top: -75px;
+  top: -85px;
   width: 100%;
   height: 300px;
   transform: skewX(280deg);
@@ -41,7 +41,7 @@ h1, h2, h3 {
 
 h1 {
   color: white;
-  font-size: clamp(2.2rem, 5vw + 1rem, 4rem);
+  font-size: clamp(2.2rem, 5vw + 1rem, 5rem);
 }
 
 /* section headings */
@@ -65,7 +65,8 @@ h3 {
 /* HEADER */
 
 header {
-  /* position: relative; */
+  position: relative;
+  text-align: center;
   margin-top: 15px;
   margin-left: 15px;
   margin-right: 15px;
@@ -78,8 +79,6 @@ img.headshot {
   object-fit: contain;
   width: calc(100% - 30px);
   height: calc(100% - 30px);
-  /* width: calc(100vw - 30px); */
-  /* offset-x | offset-y | blur-radius | color */
   box-shadow: 3px 3px 5px rgba(0,0,0,.3);
   margin: 15px;
 }
