@@ -75,6 +75,10 @@ header {
   z-index: 2;
 }
 
+/* div.headshot {
+  background-image: url("./img/pexels-gustavo-fring-4975635.jpg");
+} */
+
 img.headshot {
   object-fit: contain;
   width: calc(100% - 30px);
@@ -82,6 +86,14 @@ img.headshot {
   box-shadow: 3px 3px 5px rgba(0,0,0,.3);
   margin: 15px;
 }
+
+/* picture.headshot {
+  margin: 15px;
+  object-fit: contain;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  box-shadow: 3px 3px 5px rgba(0,0,0,.3);
+} */
 
 h1.myname {
   position: absolute;
@@ -228,6 +240,12 @@ p.footertext {
   object-fit: contain;
 }
 
+
+@media screen 
+  and (min-device-width: 600px) 
+  and (max-device-width: 1024px) {
+
+}
 
 /* @media (min-width: 600px) {
   main.mywork {

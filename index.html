@@ -15,7 +15,34 @@
   <div class="flag"></div>
   
   <header>
-    <img src="./img/pexels-gustavo-fring-4975635.jpg" class="headshot" alt="">
+    <picture>
+      <!-- mobile -->
+      <source 
+        media="(max-width: 600px)" 
+        srcset="./img/pexels-gustavo-fring-4975635_portrait.jpg"
+        class="headshot" 
+      />
+      <!-- widescreen -->
+      <source 
+        media="(min-width: 900px)" 
+        srcset="./img/pexels-gustavo-fring-4975635_landscape.jpg"
+        class="headshot" 
+      />
+      <!-- tablet -->
+      <source 
+        media="(min-width: 601px)" 
+        srcset="./img/pexels-gustavo-fring-4975635_square.jpg"
+        class="headshot" 
+      />
+      <!-- fallback -->
+      <img 
+        src="./img/pexels-gustavo-fring-4975635.jpg" 
+        class="headshot" 
+        alt="headshot" 
+      />
+    </picture>
+
+    <!-- <img src="./img/pexels-gustavo-fring-4975635.jpg" alt="" class="headshot"> -->
     <h1 class="myname">Ashley Williams</h1>
   </header>
 
