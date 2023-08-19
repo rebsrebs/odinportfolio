@@ -29,7 +29,7 @@ body {
   height: 300px;
   transform: skewX(280deg);
   transform: skewY(8deg);
-  background-color: blue;
+  background-color: rgb(62, 43, 186);
   z-index: 0;
   box-shadow: 3px 3px 5px rgba(0,0,0,.3);
   
@@ -85,7 +85,7 @@ img.headshot {
 
 h1.myname {
   position: absolute;
-  top: 5%;
+  top: 3%;
   left: 5%;
   text-shadow: 1px 1px 2px rgba(0,0,0,.3);;
 }
