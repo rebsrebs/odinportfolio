@@ -32,7 +32,7 @@ body {
   background-color: rgb(62, 43, 186);
   z-index: 0;
   box-shadow: 3px 3px 5px rgba(0,0,0,.3);
-  
+
 }
 
 h1, h2, h3 {
@@ -41,7 +41,7 @@ h1, h2, h3 {
 
 h1 {
   color: white;
-  font-size: clamp(2.2rem, 5vw + 1rem, 5rem);
+  font-size: clamp(5.2rem, 15vw + 1rem, 9rem);
 }
 
 /* section headings */
@@ -85,9 +85,10 @@ img.headshot {
 
 h1.myname {
   position: absolute;
-  top: 3%;
-  left: 5%;
-  text-shadow: 1px 1px 2px rgba(0,0,0,.3);;
+  bottom: 5%;
+  left: 10%;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.3);
+  text-align: left;
 }
 
 /* ABOUT ME */
